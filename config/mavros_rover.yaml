@@ -1,0 +1,11 @@
+# Overrides on top of mavros apm_config.yaml (loaded by launch/mavros_rover.launch.py).
+/**:
+  ros__parameters:
+    system_id: 1          # MAVROS's own MAVLink ids (GCS = 255 is MAVProxy/Mission Planner)
+    component_id: 191
+
+# /mavros/setpoint_velocity/cmd_vel_unstamped (geometry_msgs/Twist) in the rover's body frame:
+# linear.x = forward m/s, angular.z = yaw rate rad/s (like any ROS mobile base). Needs GUIDED mode + armed.
+/**/setpoint_velocity:
+  ros__parameters:
+    mav_frame: BODY_NED
