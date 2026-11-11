@@ -1,6 +1,3 @@
-
-
-
 # rover_ws — Rover ArduPilot + Mission Planner + ROS 2 (MAVROS)
 
 Conexión al rover con ArduPilot desde el PC (Ubuntu 24.04), para verlo en Mission Planner y manejarlo desde ROS 2 a través de MAVROS.
